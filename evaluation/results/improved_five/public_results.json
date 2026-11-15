@@ -1,0 +1,42 @@
+[
+  {
+    "approach": "01_gap_augmented",
+    "spell_f1": 0.33777777777777773,
+    "macro_f1": 0.6950170642195294,
+    "alive_dead_f1": 0.9094246269252254,
+    "n_gt_spells": 17,
+    "n_pred_spells": 28
+  },
+  {
+    "approach": "02_temporal_semantic",
+    "spell_f1": 0.3545454545454545,
+    "macro_f1": 0.7177610523646963,
+    "alive_dead_f1": 0.9146537842190016,
+    "n_gt_spells": 17,
+    "n_pred_spells": 27
+  },
+  {
+    "approach": "03_hierarchical",
+    "spell_f1": 0.4177777777777777,
+    "macro_f1": 0.7260204903268913,
+    "alive_dead_f1": 0.9283989092325672,
+    "n_gt_spells": 17,
+    "n_pred_spells": 28
+  },
+  {
+    "approach": "04_sparse_boundary",
+    "spell_f1": 0.51,
+    "macro_f1": 0.7427615805512767,
+    "alive_dead_f1": 0.9302833944882504,
+    "n_gt_spells": 17,
+    "n_pred_spells": 23
+  },
+  {
+    "approach": "05_boundary_veto",
+    "spell_f1": 0.20645161290322583,
+    "macro_f1": 0.4702797473795972,
+    "alive_dead_f1": 0.9061050710864442,
+    "n_gt_spells": 17,
+    "n_pred_spells": 14
+  }
+]

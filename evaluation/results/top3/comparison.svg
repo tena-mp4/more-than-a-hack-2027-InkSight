@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="500" viewBox="0 0 920 500">
+<rect width="100%" height="100%" fill="white"/>
+<text x="460.0" y="30" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">Public 5-minute validation</text>
+<line x1="90" y1="395.0" x2="890" y2="395.0" stroke="#e5e7eb"/>
+<text x="80" y="399.0" text-anchor="end" font-family="sans-serif" font-size="12">0.0</text>
+<line x1="90" y1="327.0" x2="890" y2="327.0" stroke="#e5e7eb"/>
+<text x="80" y="331.0" text-anchor="end" font-family="sans-serif" font-size="12">0.2</text>
+<line x1="90" y1="259.0" x2="890" y2="259.0" stroke="#e5e7eb"/>
+<text x="80" y="263.0" text-anchor="end" font-family="sans-serif" font-size="12">0.4</text>
+<line x1="90" y1="191.0" x2="890" y2="191.0" stroke="#e5e7eb"/>
+<text x="80" y="195.0" text-anchor="end" font-family="sans-serif" font-size="12">0.6</text>
+<line x1="90" y1="122.99999999999999" x2="890" y2="122.99999999999999" stroke="#e5e7eb"/>
+<text x="80" y="126.99999999999999" text-anchor="end" font-family="sans-serif" font-size="12">0.8</text>
+<line x1="90" y1="55.0" x2="890" y2="55.0" stroke="#e5e7eb"/>
+<text x="80" y="59.0" text-anchor="end" font-family="sans-serif" font-size="12">1.0</text>
+<rect x="188.33333333333334" y="263.0" width="70" height="132.0" fill="#2563eb"/>
+<text x="223.33333333333334" y="256.0" text-anchor="middle" font-family="sans-serif" font-size="12">0.388</text>
+<rect x="258.33333333333337" y="175.49255857793352" width="70" height="219.50744142206648" fill="#f97316"/>
+<text x="293.33333333333337" y="168.49255857793352" text-anchor="middle" font-family="sans-serif" font-size="12">0.646</text>
+<text x="223.33333333333334" y="430" text-anchor="middle" font-family="sans-serif" font-size="13">A3 viterbi</text>
+<rect x="455.0" y="282.1489361702128" width="70" height="112.85106382978722" fill="#2563eb"/>
+<text x="490.0" y="275.1489361702128" text-anchor="middle" font-family="sans-serif" font-size="12">0.332</text>
+<rect x="525.0" y="196.37412017667012" width="70" height="198.62587982332988" fill="#f97316"/>
+<text x="560.0" y="189.37412017667012" text-anchor="middle" font-family="sans-serif" font-size="12">0.584</text>
+<text x="490.0" y="430" text-anchor="middle" font-family="sans-serif" font-size="13">A1 state machine</text>
+<rect x="721.6666666666667" y="341.42424242424244" width="70" height="53.575757575757564" fill="#2563eb"/>
+<text x="756.6666666666667" y="334.42424242424244" text-anchor="middle" font-family="sans-serif" font-size="12">0.158</text>
+<rect x="791.6666666666667" y="164.949878538326" width="70" height="230.050121461674" fill="#f97316"/>
+<text x="826.6666666666667" y="157.949878538326" text-anchor="middle" font-family="sans-serif" font-size="12">0.677</text>
+<text x="756.6666666666667" y="430" text-anchor="middle" font-family="sans-serif" font-size="13">A2 hysteresis</text>
+<rect x="690" y="465" width="14" height="14" fill="#2563eb"/>
+<text x="710" y="477" font-family="sans-serif" font-size="12">spellF1</text>
+<rect x="800" y="465" width="14" height="14" fill="#f97316"/>
+<text x="820" y="477" font-family="sans-serif" font-size="12">macroF1</text>
+</svg>

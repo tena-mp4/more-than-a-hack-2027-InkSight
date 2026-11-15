@@ -1,0 +1,29 @@
+[
+  {
+    "approach": "approach_3_viterbi",
+    "spell_f1": 0.3882352941176471,
+    "macro_f1": 0.6456101218296073,
+    "alive_dead_f1": 0.9169333942996495,
+    "team_accuracy_alive": 0.8258995191510529,
+    "predicted_possessions": 17,
+    "mean_possession_seconds": 16.68470588235294
+  },
+  {
+    "approach": "approach_1_state_machine",
+    "spell_f1": 0.3319148936170213,
+    "macro_f1": 0.5841937641862643,
+    "alive_dead_f1": 0.9048083414597555,
+    "team_accuracy_alive": 0.8385010777648815,
+    "predicted_possessions": 30,
+    "mean_possession_seconds": 9.733333333333334
+  },
+  {
+    "approach": "approach_2_hysteresis",
+    "spell_f1": 0.15757575757575756,
+    "macro_f1": 0.6766180042990412,
+    "alive_dead_f1": 0.9166992569417286,
+    "team_accuracy_alive": 0.7998673520145912,
+    "predicted_possessions": 49,
+    "mean_possession_seconds": 5.513469387755102
+  }
+]

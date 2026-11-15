@@ -1,0 +1,58 @@
+[
+  {
+    "approach": "00_raw_frame_ablation",
+    "spell_f1": 0.03550295857988166,
+    "macro_f1": 0.6716709250174991,
+    "alive_dead_f1": 0.8879765395894428,
+    "n_gt_spells": 17,
+    "n_pred_spells": 152
+  },
+  {
+    "approach": "01_dfl_structured",
+    "spell_f1": 0.3574468085106383,
+    "macro_f1": 0.7264547900228505,
+    "alive_dead_f1": 0.913527326683703,
+    "n_gt_spells": 17,
+    "n_pred_spells": 30
+  },
+  {
+    "approach": "02_semantic_tags",
+    "spell_f1": 0.3909090909090909,
+    "macro_f1": 0.7213807350800971,
+    "alive_dead_f1": 0.909452406594317,
+    "n_gt_spells": 17,
+    "n_pred_spells": 27
+  },
+  {
+    "approach": "03_learned_boundary",
+    "spell_f1": 0.2943396226415094,
+    "macro_f1": 0.7171203226884882,
+    "alive_dead_f1": 0.9124606983286447,
+    "n_gt_spells": 17,
+    "n_pred_spells": 36
+  },
+  {
+    "approach": "04_phase_boundary",
+    "spell_f1": 0.2923076923076923,
+    "macro_f1": 0.7141319577369604,
+    "alive_dead_f1": 0.9123390112172829,
+    "n_gt_spells": 17,
+    "n_pred_spells": 35
+  },
+  {
+    "approach": "05_frame_vote",
+    "spell_f1": 0.3137254901960784,
+    "macro_f1": 0.7151377043042614,
+    "alive_dead_f1": 0.9116363336901919,
+    "n_gt_spells": 17,
+    "n_pred_spells": 34
+  },
+  {
+    "approach": "06_spell_vote",
+    "spell_f1": 0.3659574468085106,
+    "macro_f1": 0.7151343202585231,
+    "alive_dead_f1": 0.9093909886119822,
+    "n_gt_spells": 17,
+    "n_pred_spells": 30
+  }
+]

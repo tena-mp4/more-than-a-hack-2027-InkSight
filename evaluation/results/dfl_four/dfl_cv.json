@@ -1,0 +1,254 @@
+[
+  {
+    "match": "J03WMX",
+    "approach": "01_dfl_frame",
+    "spell_f1": 0.20440664862775412,
+    "macro_f1": 0.9123054691334823,
+    "alive_dead_f1": 0.9964150544206493,
+    "n_gt_spells": 511,
+    "n_pred_spells": 2076
+  },
+  {
+    "match": "J03WMX",
+    "approach": "03_dfl_structured",
+    "spell_f1": 0.5186729857819905,
+    "macro_f1": 0.9166879785319003,
+    "alive_dead_f1": 0.9990445542523199,
+    "n_gt_spells": 511,
+    "n_pred_spells": 544
+  },
+  {
+    "match": "J03WMX",
+    "approach": "04_boundary_fusion",
+    "spell_f1": 0.4905335628227195,
+    "macro_f1": 0.9164722566488708,
+    "alive_dead_f1": 0.9991149456951779,
+    "n_gt_spells": 511,
+    "n_pred_spells": 651
+  },
+  {
+    "match": "J03WMX",
+    "approach": "06_spell_vote",
+    "spell_f1": 0.49018932874354554,
+    "macro_f1": 0.9161930067952162,
+    "alive_dead_f1": 0.999103223121604,
+    "n_gt_spells": 511,
+    "n_pred_spells": 651
+  },
+  {
+    "match": "J03WN1",
+    "approach": "01_dfl_frame",
+    "spell_f1": 0.2004559270516717,
+    "macro_f1": 0.8895728547796545,
+    "alive_dead_f1": 0.99252582823396,
+    "n_gt_spells": 500,
+    "n_pred_spells": 2132
+  },
+  {
+    "match": "J03WN1",
+    "approach": "03_dfl_structured",
+    "spell_f1": 0.5314659197012139,
+    "macro_f1": 0.8969835055181402,
+    "alive_dead_f1": 0.9942514371407148,
+    "n_gt_spells": 500,
+    "n_pred_spells": 571
+  },
+  {
+    "match": "J03WN1",
+    "approach": "04_boundary_fusion",
+    "spell_f1": 0.4888524590163934,
+    "macro_f1": 0.896057499780058,
+    "alive_dead_f1": 0.9944362372206175,
+    "n_gt_spells": 500,
+    "n_pred_spells": 720
+  },
+  {
+    "match": "J03WN1",
+    "approach": "06_spell_vote",
+    "spell_f1": 0.47838709677419355,
+    "macro_f1": 0.8955188180380236,
+    "alive_dead_f1": 0.9944584086666373,
+    "n_gt_spells": 500,
+    "n_pred_spells": 740
+  },
+  {
+    "match": "J03WOH",
+    "approach": "01_dfl_frame",
+    "spell_f1": 0.22651296829971185,
+    "macro_f1": 0.9020923163982376,
+    "alive_dead_f1": 0.9996733729455507,
+    "n_gt_spells": 402,
+    "n_pred_spells": 1680
+  },
+  {
+    "match": "J03WOH",
+    "approach": "03_dfl_structured",
+    "spell_f1": 0.5193415637860083,
+    "macro_f1": 0.9087946292980833,
+    "alive_dead_f1": 0.9997845860926003,
+    "n_gt_spells": 402,
+    "n_pred_spells": 570
+  },
+  {
+    "match": "J03WOH",
+    "approach": "04_boundary_fusion",
+    "spell_f1": 0.478584729981378,
+    "macro_f1": 0.9073913740865719,
+    "alive_dead_f1": 0.9998193239937736,
+    "n_gt_spells": 402,
+    "n_pred_spells": 672
+  },
+  {
+    "match": "J03WOH",
+    "approach": "06_spell_vote",
+    "spell_f1": 0.4726598702502317,
+    "macro_f1": 0.9075447630146979,
+    "alive_dead_f1": 0.9997845860926003,
+    "n_gt_spells": 402,
+    "n_pred_spells": 677
+  },
+  {
+    "match": "J03WOY",
+    "approach": "01_dfl_frame",
+    "spell_f1": 0.21835016835016838,
+    "macro_f1": 0.9014796818393681,
+    "alive_dead_f1": 0.999665746924544,
+    "n_gt_spells": 456,
+    "n_pred_spells": 1920
+  },
+  {
+    "match": "J03WOY",
+    "approach": "03_dfl_structured",
+    "spell_f1": 0.5580838323353293,
+    "macro_f1": 0.9092264713531337,
+    "alive_dead_f1": 0.9997575249192295,
+    "n_gt_spells": 456,
+    "n_pred_spells": 546
+  },
+  {
+    "match": "J03WOY",
+    "approach": "04_boundary_fusion",
+    "spell_f1": 0.4933098591549296,
+    "macro_f1": 0.905880473307453,
+    "alive_dead_f1": 0.9997837327723493,
+    "n_gt_spells": 456,
+    "n_pred_spells": 680
+  },
+  {
+    "match": "J03WOY",
+    "approach": "06_spell_vote",
+    "spell_f1": 0.4885017421602787,
+    "macro_f1": 0.9065167189279909,
+    "alive_dead_f1": 0.9997706286740371,
+    "n_gt_spells": 456,
+    "n_pred_spells": 692
+  },
+  {
+    "match": "J03WPY",
+    "approach": "01_dfl_frame",
+    "spell_f1": 0.2165120593692022,
+    "macro_f1": 0.9095119987490512,
+    "alive_dead_f1": 0.9998035797588941,
+    "n_gt_spells": 421,
+    "n_pred_spells": 1735
+  },
+  {
+    "match": "J03WPY",
+    "approach": "03_dfl_structured",
+    "spell_f1": 0.5176225234619396,
+    "macro_f1": 0.9149934366648264,
+    "alive_dead_f1": 0.9999140756379884,
+    "n_gt_spells": 421,
+    "n_pred_spells": 538
+  },
+  {
+    "match": "J03WPY",
+    "approach": "04_boundary_fusion",
+    "spell_f1": 0.4557798165137615,
+    "macro_f1": 0.9138216105674237,
+    "alive_dead_f1": 0.9999263496427958,
+    "n_gt_spells": 421,
+    "n_pred_spells": 669
+  },
+  {
+    "match": "J03WPY",
+    "approach": "06_spell_vote",
+    "spell_f1": 0.44927536231884063,
+    "macro_f1": 0.9137927171613911,
+    "alive_dead_f1": 0.9999202126027262,
+    "n_gt_spells": 421,
+    "n_pred_spells": 683
+  },
+  {
+    "match": "J03WQQ",
+    "approach": "01_dfl_frame",
+    "spell_f1": 0.22114695340501794,
+    "macro_f1": 0.9188560331217501,
+    "alive_dead_f1": 0.9995079936217004,
+    "n_gt_spells": 401,
+    "n_pred_spells": 1831
+  },
+  {
+    "match": "J03WQQ",
+    "approach": "03_dfl_structured",
+    "spell_f1": 0.5877995642701526,
+    "macro_f1": 0.9268928516564784,
+    "alive_dead_f1": 0.9996858793895391,
+    "n_gt_spells": 401,
+    "n_pred_spells": 517
+  },
+  {
+    "match": "J03WQQ",
+    "approach": "04_boundary_fusion",
+    "spell_f1": 0.5214354995150339,
+    "macro_f1": 0.9248087732609288,
+    "alive_dead_f1": 0.9996918043668951,
+    "n_gt_spells": 401,
+    "n_pred_spells": 630
+  },
+  {
+    "match": "J03WQQ",
+    "approach": "06_spell_vote",
+    "spell_f1": 0.5168756027000965,
+    "macro_f1": 0.9247413793347828,
+    "alive_dead_f1": 0.9996858793895391,
+    "n_gt_spells": 401,
+    "n_pred_spells": 636
+  },
+  {
+    "match": "J03WR9",
+    "approach": "01_dfl_frame",
+    "spell_f1": 0.21353670162059105,
+    "macro_f1": 0.9227245189055612,
+    "alive_dead_f1": 0.9998359214767067,
+    "n_gt_spells": 370,
+    "n_pred_spells": 1728
+  },
+  {
+    "match": "J03WR9",
+    "approach": "03_dfl_structured",
+    "spell_f1": 0.5506257110352674,
+    "macro_f1": 0.9288313108226633,
+    "alive_dead_f1": 0.9998652235823571,
+    "n_gt_spells": 370,
+    "n_pred_spells": 509
+  },
+  {
+    "match": "J03WR9",
+    "approach": "04_boundary_fusion",
+    "spell_f1": 0.49767911200807263,
+    "macro_f1": 0.9284901465609607,
+    "alive_dead_f1": 0.9998769418286444,
+    "n_gt_spells": 370,
+    "n_pred_spells": 621
+  },
+  {
+    "match": "J03WR9",
+    "approach": "06_spell_vote",
+    "spell_f1": 0.49707955689828803,
+    "macro_f1": 0.9284461769364268,
+    "alive_dead_f1": 0.9998652235823571,
+    "n_gt_spells": 370,
+    "n_pred_spells": 623
+  }
+]

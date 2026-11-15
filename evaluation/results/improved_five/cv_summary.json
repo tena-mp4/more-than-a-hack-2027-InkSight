@@ -1,0 +1,104 @@
+[
+  {
+    "method": "01_gap_augmented",
+    "config": "cost=8",
+    "mean_spell_f1": 0.40556843303910944,
+    "std_spell_f1": 0.02939454740230918
+  },
+  {
+    "method": "02_temporal_context",
+    "config": "cost=8",
+    "mean_spell_f1": 0.42817977576679095,
+    "std_spell_f1": 0.028978956729937933
+  },
+  {
+    "method": "03_hierarchical",
+    "config": "bias=-0.50,dead_cost=6.0",
+    "mean_spell_f1": 0.4001649050389414,
+    "std_spell_f1": 0.033743064423258896
+  },
+  {
+    "method": "03_hierarchical",
+    "config": "bias=-0.50,dead_cost=8.0",
+    "mean_spell_f1": 0.40067746241476077,
+    "std_spell_f1": 0.03449505768577957
+  },
+  {
+    "method": "03_hierarchical",
+    "config": "bias=-1.00,dead_cost=6.0",
+    "mean_spell_f1": 0.4006080783910373,
+    "std_spell_f1": 0.034690701759140435
+  },
+  {
+    "method": "03_hierarchical",
+    "config": "bias=-1.00,dead_cost=8.0",
+    "mean_spell_f1": 0.4008744871826844,
+    "std_spell_f1": 0.03547186027856175
+  },
+  {
+    "method": "03_hierarchical",
+    "config": "bias=-1.50,dead_cost=6.0",
+    "mean_spell_f1": 0.40022531686232093,
+    "std_spell_f1": 0.034517945242940155
+  },
+  {
+    "method": "03_hierarchical",
+    "config": "bias=0.00,dead_cost=8.0",
+    "mean_spell_f1": 0.4151948794840291,
+    "std_spell_f1": 0.03496430937321125
+  },
+  {
+    "method": "04_sparse_boundary",
+    "config": "threshold=0.40,candidate=5.0,other=14.0",
+    "mean_spell_f1": 0.41644980234743306,
+    "std_spell_f1": 0.03801283805240693
+  },
+  {
+    "method": "04_sparse_boundary",
+    "config": "threshold=0.60,candidate=5.0,other=14.0",
+    "mean_spell_f1": 0.4289596232918624,
+    "std_spell_f1": 0.03445169797403985
+  },
+  {
+    "method": "04_sparse_boundary",
+    "config": "threshold=0.60,candidate=6.0,other=16.0",
+    "mean_spell_f1": 0.4272736824450654,
+    "std_spell_f1": 0.034910205549442505
+  },
+  {
+    "method": "04_sparse_boundary",
+    "config": "threshold=0.80,candidate=5.0,other=14.0",
+    "mean_spell_f1": 0.42975980852571477,
+    "std_spell_f1": 0.034523459684550534
+  },
+  {
+    "method": "04_sparse_boundary",
+    "config": "threshold=0.80,candidate=6.0,other=16.0",
+    "mean_spell_f1": 0.4269976369498281,
+    "std_spell_f1": 0.034953096741525476
+  },
+  {
+    "method": "05_boundary_veto",
+    "config": "threshold=0.30,radius=6",
+    "mean_spell_f1": 0.3676056945917455,
+    "std_spell_f1": 0.034890910745909436
+  },
+  {
+    "method": "05_boundary_veto",
+    "config": "threshold=0.50,radius=8",
+    "mean_spell_f1": 0.33384711362686614,
+    "std_spell_f1": 0.04958584528542054
+  },
+  {
+    "method": "05_boundary_veto",
+    "config": "threshold=0.70,radius=8",
+    "mean_spell_f1": 0.25000476831643087,
+    "std_spell_f1": 0.01870876985869229
+  },
+  {
+    "method": "05_boundary_veto",
+    "config": "threshold=0.80,radius=12",
+    "mean_spell_f1": 0.2408166278676968,
+    "std_spell_f1": 0.022088588503328635
+  }
+]

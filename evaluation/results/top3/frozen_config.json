@@ -1,0 +1,22 @@
+{
+  "fps": 25,
+  "game": "BAR-ATH",
+  "model_config": {
+    "dead_confirm_frames": 6,
+    "distance_temperature_m": 1.4,
+    "hysteresis_alpha_dead": 0.12,
+    "hysteresis_alpha_team": 0.08,
+    "hysteresis_dead_enter": 1.0,
+    "hysteresis_dead_exit": -0.55,
+    "hysteresis_team_threshold": 0.3,
+    "possession_radius_m": 3.0,
+    "set_piece_restart_fraction": 0.5,
+    "state_confirm_frames": 8,
+    "team_tag_weight": 0.55,
+    "viterbi_dead_switch_cost": 1.2,
+    "viterbi_emission_scale": 0.08,
+    "viterbi_team_switch_cost": 2.8
+  },
+  "n_frames": 199319,
+  "tactical_metadata_resolved_to": "data/broadcast/BAR-ATH_tactical_atd.xml"
+}

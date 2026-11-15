@@ -1,0 +1,16 @@
+{
+  "selected": {
+    "01_gap_augmented": "cost=8",
+    "02_temporal_context": "cost=8",
+    "03_hierarchical": "bias=0.00,dead_cost=8.0",
+    "04_sparse_boundary": "threshold=0.80,candidate=5.0,other=14.0",
+    "05_boundary_veto": "threshold=0.30,radius=6"
+  },
+  "target_gap_statistics": {
+    "n_gaps": 150,
+    "median_frames": 268.0,
+    "p90_frames": 845.2999999999995,
+    "max_frames": 5537
+  },
+  "public_ground_truth_used_for_selection": false
+}
