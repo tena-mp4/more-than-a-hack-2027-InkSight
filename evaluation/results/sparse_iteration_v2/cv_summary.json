@@ -1,0 +1,110 @@
+[
+  {
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "mean_spell_f1": 0.43210203622002125,
+    "std_spell_f1": 0.03851850615076065
+  },
+  {
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 1,
+      "gate_radius": 4,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "mean_spell_f1": 0.4316622032956935,
+    "std_spell_f1": 0.03260172860918448
+  },
+  {
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 1,
+      "gate_radius": 4,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "mean_spell_f1": 0.4312424219811427,
+    "std_spell_f1": 0.033039974262848534
+  },
+  {
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 1,
+      "gate_radius": 3,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "mean_spell_f1": 0.43119051333229497,
+    "std_spell_f1": 0.03606597526442446
+  },
+  {
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "mean_spell_f1": 0.4306308299099784,
+    "std_spell_f1": 0.03658981153861204
+  },
+  {
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "mean_spell_f1": 0.4302214599594557,
+    "std_spell_f1": 0.036155368328930085
+  },
+  {
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "mean_spell_f1": 0.42597452642855993,
+    "std_spell_f1": 0.036386434619852366
+  },
+  {
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "mean_spell_f1": 0.42550224849054147,
+    "std_spell_f1": 0.035677451973744556
+  },
+  {
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "mean_spell_f1": 0.42466553419178416,
+    "std_spell_f1": 0.03484974025459265
+  }
+]

@@ -1,0 +1,1143 @@
+[
+  {
+    "match": "J03WMX",
+    "method": "baseline_sparse_v1",
+    "config": "threshold=0.8,candidate=5,other=14",
+    "spell_f1": 0.39108781127129744,
+    "macro_f1": 0.7550221968834746,
+    "alive_dead_f1": 0.8935175684611351,
+    "n_gt_spells": 511,
+    "n_pred_spells": 252
+  },
+  {
+    "match": "J03WMX",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 1,
+      "gate_radius": 3,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "spell_f1": 0.39112271540469973,
+    "macro_f1": 0.7585014740664908,
+    "alive_dead_f1": 0.896291122281893,
+    "n_gt_spells": 511,
+    "n_pred_spells": 255
+  },
+  {
+    "match": "J03WMX",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 1,
+      "gate_radius": 4,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "spell_f1": 0.38903394255874674,
+    "macro_f1": 0.7548039163586386,
+    "alive_dead_f1": 0.8935134518923848,
+    "n_gt_spells": 511,
+    "n_pred_spells": 255
+  },
+  {
+    "match": "J03WMX",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 1,
+      "gate_radius": 4,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "spell_f1": 0.3884057971014493,
+    "macro_f1": 0.7550305416922761,
+    "alive_dead_f1": 0.8935185449073467,
+    "n_gt_spells": 511,
+    "n_pred_spells": 248
+  },
+  {
+    "match": "J03WMX",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "spell_f1": 0.3851655629139073,
+    "macro_f1": 0.7578595362325758,
+    "alive_dead_f1": 0.8894376615377529,
+    "n_gt_spells": 511,
+    "n_pred_spells": 244
+  },
+  {
+    "match": "J03WMX",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "spell_f1": 0.3835325365205843,
+    "macro_f1": 0.7553300305168295,
+    "alive_dead_f1": 0.8935199963518629,
+    "n_gt_spells": 511,
+    "n_pred_spells": 242
+  },
+  {
+    "match": "J03WMX",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "spell_f1": 0.3814077025232403,
+    "macro_f1": 0.7526467949420329,
+    "alive_dead_f1": 0.8935250896363813,
+    "n_gt_spells": 511,
+    "n_pred_spells": 242
+  },
+  {
+    "match": "J03WMX",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "spell_f1": 0.3909933774834437,
+    "macro_f1": 0.758359859779814,
+    "alive_dead_f1": 0.8917225408155605,
+    "n_gt_spells": 511,
+    "n_pred_spells": 244
+  },
+  {
+    "match": "J03WMX",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "spell_f1": 0.3893617021276595,
+    "macro_f1": 0.7557070278989104,
+    "alive_dead_f1": 0.8932399762806185,
+    "n_gt_spells": 511,
+    "n_pred_spells": 241
+  },
+  {
+    "match": "J03WMX",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "spell_f1": 0.38986666666666664,
+    "macro_f1": 0.7533421758201432,
+    "alive_dead_f1": 0.8932399762806185,
+    "n_gt_spells": 511,
+    "n_pred_spells": 239
+  },
+  {
+    "match": "J03WN1",
+    "method": "baseline_sparse_v1",
+    "config": "threshold=0.8,candidate=5,other=14",
+    "spell_f1": 0.39254327563249003,
+    "macro_f1": 0.6879166199926855,
+    "alive_dead_f1": 0.8210317681871475,
+    "n_gt_spells": 500,
+    "n_pred_spells": 251
+  },
+  {
+    "match": "J03WN1",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 1,
+      "gate_radius": 3,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "spell_f1": 0.393112582781457,
+    "macro_f1": 0.6865504899102559,
+    "alive_dead_f1": 0.8211177262987445,
+    "n_gt_spells": 500,
+    "n_pred_spells": 255
+  },
+  {
+    "match": "J03WN1",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 1,
+      "gate_radius": 4,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "spell_f1": 0.3957446808510638,
+    "macro_f1": 0.687630175515351,
+    "alive_dead_f1": 0.8208833322862349,
+    "n_gt_spells": 500,
+    "n_pred_spells": 252
+  },
+  {
+    "match": "J03WN1",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 1,
+      "gate_radius": 4,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "spell_f1": 0.39680000000000004,
+    "macro_f1": 0.6886447132035455,
+    "alive_dead_f1": 0.8207601828906496,
+    "n_gt_spells": 500,
+    "n_pred_spells": 250
+  },
+  {
+    "match": "J03WN1",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "spell_f1": 0.3936,
+    "macro_f1": 0.687447113671054,
+    "alive_dead_f1": 0.8209707599072806,
+    "n_gt_spells": 500,
+    "n_pred_spells": 250
+  },
+  {
+    "match": "J03WN1",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "spell_f1": 0.3951742627345845,
+    "macro_f1": 0.6886742412575363,
+    "alive_dead_f1": 0.82089625177149,
+    "n_gt_spells": 500,
+    "n_pred_spells": 246
+  },
+  {
+    "match": "J03WN1",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "spell_f1": 0.39731543624161075,
+    "macro_f1": 0.6899234413873772,
+    "alive_dead_f1": 0.8211259544648715,
+    "n_gt_spells": 500,
+    "n_pred_spells": 245
+  },
+  {
+    "match": "J03WN1",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "spell_f1": 0.3800539083557951,
+    "macro_f1": 0.6859253485137312,
+    "alive_dead_f1": 0.8203211768568255,
+    "n_gt_spells": 500,
+    "n_pred_spells": 242
+  },
+  {
+    "match": "J03WN1",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "spell_f1": 0.37945945945945947,
+    "macro_f1": 0.68676191684995,
+    "alive_dead_f1": 0.8212032384142937,
+    "n_gt_spells": 500,
+    "n_pred_spells": 240
+  },
+  {
+    "match": "J03WN1",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "spell_f1": 0.38051420838971584,
+    "macro_f1": 0.6877168493093371,
+    "alive_dead_f1": 0.8211860444016387,
+    "n_gt_spells": 500,
+    "n_pred_spells": 239
+  },
+  {
+    "match": "J03WOH",
+    "method": "baseline_sparse_v1",
+    "config": "threshold=0.8,candidate=5,other=14",
+    "spell_f1": 0.4262686567164179,
+    "macro_f1": 0.7149094372456144,
+    "alive_dead_f1": 0.8846644969910484,
+    "n_gt_spells": 402,
+    "n_pred_spells": 268
+  },
+  {
+    "match": "J03WOH",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 1,
+      "gate_radius": 3,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "spell_f1": 0.41114369501466275,
+    "macro_f1": 0.709828504428368,
+    "alive_dead_f1": 0.8851626415341318,
+    "n_gt_spells": 402,
+    "n_pred_spells": 280
+  },
+  {
+    "match": "J03WOH",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 1,
+      "gate_radius": 4,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "spell_f1": 0.4226190476190476,
+    "macro_f1": 0.715781978847508,
+    "alive_dead_f1": 0.8846733108948754,
+    "n_gt_spells": 402,
+    "n_pred_spells": 270
+  },
+  {
+    "match": "J03WOH",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 1,
+      "gate_radius": 4,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "spell_f1": 0.42331838565022417,
+    "macro_f1": 0.7145393031027872,
+    "alive_dead_f1": 0.8846791039400707,
+    "n_gt_spells": 402,
+    "n_pred_spells": 267
+  },
+  {
+    "match": "J03WOH",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "spell_f1": 0.411764705882353,
+    "macro_f1": 0.7118103042728615,
+    "alive_dead_f1": 0.8849463702579071,
+    "n_gt_spells": 402,
+    "n_pred_spells": 278
+  },
+  {
+    "match": "J03WOH",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "spell_f1": 0.4172106824925816,
+    "macro_f1": 0.7144072132308326,
+    "alive_dead_f1": 0.8846211769019728,
+    "n_gt_spells": 402,
+    "n_pred_spells": 272
+  },
+  {
+    "match": "J03WOH",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "spell_f1": 0.41904761904761906,
+    "macro_f1": 0.7137042958476516,
+    "alive_dead_f1": 0.8846385542168675,
+    "n_gt_spells": 402,
+    "n_pred_spells": 270
+  },
+  {
+    "match": "J03WOH",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "spell_f1": 0.4102255639097745,
+    "macro_f1": 0.7138253927367648,
+    "alive_dead_f1": 0.8845169273476016,
+    "n_gt_spells": 402,
+    "n_pred_spells": 263
+  },
+  {
+    "match": "J03WOH",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "spell_f1": 0.4169184290030211,
+    "macro_f1": 0.715100271024077,
+    "alive_dead_f1": 0.8842007361898898,
+    "n_gt_spells": 402,
+    "n_pred_spells": 260
+  },
+  {
+    "match": "J03WOH",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "spell_f1": 0.41393939393939394,
+    "macro_f1": 0.713831930598248,
+    "alive_dead_f1": 0.8842007361898898,
+    "n_gt_spells": 402,
+    "n_pred_spells": 258
+  },
+  {
+    "match": "J03WOY",
+    "method": "baseline_sparse_v1",
+    "config": "threshold=0.8,candidate=5,other=14",
+    "spell_f1": 0.44539385847797064,
+    "macro_f1": 0.7025991205898485,
+    "alive_dead_f1": 0.8450325343778944,
+    "n_gt_spells": 456,
+    "n_pred_spells": 293
+  },
+  {
+    "match": "J03WOY",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 1,
+      "gate_radius": 3,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "spell_f1": 0.4427807486631016,
+    "macro_f1": 0.7011187730016321,
+    "alive_dead_f1": 0.843225978174075,
+    "n_gt_spells": 456,
+    "n_pred_spells": 292
+  },
+  {
+    "match": "J03WOY",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 1,
+      "gate_radius": 4,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "spell_f1": 0.44171122994652406,
+    "macro_f1": 0.701870239377309,
+    "alive_dead_f1": 0.8450529743505037,
+    "n_gt_spells": 456,
+    "n_pred_spells": 292
+  },
+  {
+    "match": "J03WOY",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 1,
+      "gate_radius": 4,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "spell_f1": 0.44171122994652406,
+    "macro_f1": 0.7018510984052976,
+    "alive_dead_f1": 0.8450479892872101,
+    "n_gt_spells": 456,
+    "n_pred_spells": 292
+  },
+  {
+    "match": "J03WOY",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "spell_f1": 0.4433155080213903,
+    "macro_f1": 0.699237545041818,
+    "alive_dead_f1": 0.8425034632188398,
+    "n_gt_spells": 456,
+    "n_pred_spells": 292
+  },
+  {
+    "match": "J03WOY",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "spell_f1": 0.4407506702412869,
+    "macro_f1": 0.7011234516147548,
+    "alive_dead_f1": 0.8440486174271506,
+    "n_gt_spells": 456,
+    "n_pred_spells": 290
+  },
+  {
+    "match": "J03WOY",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "spell_f1": 0.44182305630026814,
+    "macro_f1": 0.7015699716240612,
+    "alive_dead_f1": 0.8440585872903378,
+    "n_gt_spells": 456,
+    "n_pred_spells": 290
+  },
+  {
+    "match": "J03WOY",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "spell_f1": 0.4337874659400545,
+    "macro_f1": 0.7013182457294639,
+    "alive_dead_f1": 0.8434253803743403,
+    "n_gt_spells": 456,
+    "n_pred_spells": 278
+  },
+  {
+    "match": "J03WOY",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "spell_f1": 0.4337874659400546,
+    "macro_f1": 0.7013094323338932,
+    "alive_dead_f1": 0.8441669669173022,
+    "n_gt_spells": 456,
+    "n_pred_spells": 278
+  },
+  {
+    "match": "J03WOY",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "spell_f1": 0.43487738419618527,
+    "macro_f1": 0.7020611593087235,
+    "alive_dead_f1": 0.8441669669173022,
+    "n_gt_spells": 456,
+    "n_pred_spells": 278
+  },
+  {
+    "match": "J03WPY",
+    "method": "baseline_sparse_v1",
+    "config": "threshold=0.8,candidate=5,other=14",
+    "spell_f1": 0.43878787878787867,
+    "macro_f1": 0.7334308484932507,
+    "alive_dead_f1": 0.8610961202104073,
+    "n_gt_spells": 421,
+    "n_pred_spells": 239
+  },
+  {
+    "match": "J03WPY",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 1,
+      "gate_radius": 3,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "spell_f1": 0.44169184290030217,
+    "macro_f1": 0.7336048022595912,
+    "alive_dead_f1": 0.8609814147667417,
+    "n_gt_spells": 421,
+    "n_pred_spells": 241
+  },
+  {
+    "match": "J03WPY",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 1,
+      "gate_radius": 4,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "spell_f1": 0.43939393939393945,
+    "macro_f1": 0.7334721968321011,
+    "alive_dead_f1": 0.8611017191604463,
+    "n_gt_spells": 421,
+    "n_pred_spells": 239
+  },
+  {
+    "match": "J03WPY",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 1,
+      "gate_radius": 4,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "spell_f1": 0.43636363636363634,
+    "macro_f1": 0.7332906221464185,
+    "alive_dead_f1": 0.8611017191604463,
+    "n_gt_spells": 421,
+    "n_pred_spells": 239
+  },
+  {
+    "match": "J03WPY",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "spell_f1": 0.44054462934947053,
+    "macro_f1": 0.7325215235925272,
+    "alive_dead_f1": 0.860856955201363,
+    "n_gt_spells": 421,
+    "n_pred_spells": 240
+  },
+  {
+    "match": "J03WPY",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "spell_f1": 0.4382397572078907,
+    "macro_f1": 0.7328320083165926,
+    "alive_dead_f1": 0.8610291153561072,
+    "n_gt_spells": 421,
+    "n_pred_spells": 238
+  },
+  {
+    "match": "J03WPY",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "spell_f1": 0.43945371775417297,
+    "macro_f1": 0.7330644230252128,
+    "alive_dead_f1": 0.8610291153561072,
+    "n_gt_spells": 421,
+    "n_pred_spells": 238
+  },
+  {
+    "match": "J03WPY",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "spell_f1": 0.4362519201228879,
+    "macro_f1": 0.7335390451058377,
+    "alive_dead_f1": 0.8605174792409611,
+    "n_gt_spells": 421,
+    "n_pred_spells": 230
+  },
+  {
+    "match": "J03WPY",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "spell_f1": 0.43204930662557783,
+    "macro_f1": 0.7331096602961277,
+    "alive_dead_f1": 0.8612363021493838,
+    "n_gt_spells": 421,
+    "n_pred_spells": 228
+  },
+  {
+    "match": "J03WPY",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "spell_f1": 0.4344615384615384,
+    "macro_f1": 0.7332178394981638,
+    "alive_dead_f1": 0.8612419031762961,
+    "n_gt_spells": 421,
+    "n_pred_spells": 229
+  },
+  {
+    "match": "J03WQQ",
+    "method": "baseline_sparse_v1",
+    "config": "threshold=0.8,candidate=5,other=14",
+    "spell_f1": 0.505109489051095,
+    "macro_f1": 0.7525429777686584,
+    "alive_dead_f1": 0.885081410735861,
+    "n_gt_spells": 401,
+    "n_pred_spells": 284
+  },
+  {
+    "match": "J03WQQ",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 1,
+      "gate_radius": 3,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "spell_f1": 0.5046511627906977,
+    "macro_f1": 0.7548245072042233,
+    "alive_dead_f1": 0.8843659755486002,
+    "n_gt_spells": 401,
+    "n_pred_spells": 287
+  },
+  {
+    "match": "J03WQQ",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 1,
+      "gate_radius": 4,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "spell_f1": 0.49532163742690055,
+    "macro_f1": 0.7512879559508706,
+    "alive_dead_f1": 0.8850840553695329,
+    "n_gt_spells": 401,
+    "n_pred_spells": 283
+  },
+  {
+    "match": "J03WQQ",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 1,
+      "gate_radius": 4,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "spell_f1": 0.4976608187134503,
+    "macro_f1": 0.7518883691465478,
+    "alive_dead_f1": 0.8850993320330703,
+    "n_gt_spells": 401,
+    "n_pred_spells": 283
+  },
+  {
+    "match": "J03WQQ",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "spell_f1": 0.5096681096681096,
+    "macro_f1": 0.7548583463686821,
+    "alive_dead_f1": 0.8840180331838255,
+    "n_gt_spells": 401,
+    "n_pred_spells": 292
+  },
+  {
+    "match": "J03WQQ",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "spell_f1": 0.5036390101892285,
+    "macro_f1": 0.7517600236985311,
+    "alive_dead_f1": 0.8850904697523229,
+    "n_gt_spells": 401,
+    "n_pred_spells": 286
+  },
+  {
+    "match": "J03WQQ",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "spell_f1": 0.5048034934497816,
+    "macro_f1": 0.7518999464340794,
+    "alive_dead_f1": 0.8850955619225148,
+    "n_gt_spells": 401,
+    "n_pred_spells": 286
+  },
+  {
+    "match": "J03WQQ",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "spell_f1": 0.5001464128843338,
+    "macro_f1": 0.7534856752733218,
+    "alive_dead_f1": 0.883575727903695,
+    "n_gt_spells": 401,
+    "n_pred_spells": 282
+  },
+  {
+    "match": "J03WQQ",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "spell_f1": 0.4982248520710059,
+    "macro_f1": 0.7513640230278145,
+    "alive_dead_f1": 0.8851006541513006,
+    "n_gt_spells": 401,
+    "n_pred_spells": 275
+  },
+  {
+    "match": "J03WQQ",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "spell_f1": 0.49554896142433236,
+    "macro_f1": 0.7519093664396111,
+    "alive_dead_f1": 0.8851108387846569,
+    "n_gt_spells": 401,
+    "n_pred_spells": 273
+  },
+  {
+    "match": "J03WR9",
+    "method": "baseline_sparse_v1",
+    "config": "threshold=0.8,candidate=5,other=14",
+    "spell_f1": 0.4333333333333333,
+    "macro_f1": 0.7418085318303848,
+    "alive_dead_f1": 0.8813082489146165,
+    "n_gt_spells": 370,
+    "n_pred_spells": 230
+  },
+  {
+    "match": "J03WR9",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 1,
+      "gate_radius": 3,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "spell_f1": 0.43383084577114434,
+    "macro_f1": 0.7402704292474489,
+    "alive_dead_f1": 0.8835414091112234,
+    "n_gt_spells": 370,
+    "n_pred_spells": 233
+  },
+  {
+    "match": "J03WR9",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 1,
+      "gate_radius": 4,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "spell_f1": 0.4378109452736319,
+    "macro_f1": 0.7420402769260855,
+    "alive_dead_f1": 0.8812591897931066,
+    "n_gt_spells": 370,
+    "n_pred_spells": 233
+  },
+  {
+    "match": "J03WR9",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 1,
+      "gate_radius": 4,
+      "min_separation": 12,
+      "team_min": 0,
+      "dead_min": 0
+    },
+    "spell_f1": 0.43443708609271525,
+    "macro_f1": 0.7419065415363991,
+    "alive_dead_f1": 0.8813808512239311,
+    "n_gt_spells": 370,
+    "n_pred_spells": 234
+  },
+  {
+    "match": "J03WR9",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "spell_f1": 0.44065573770491806,
+    "macro_f1": 0.744979343696428,
+    "alive_dead_f1": 0.8831018250121745,
+    "n_gt_spells": 370,
+    "n_pred_spells": 240
+  },
+  {
+    "match": "J03WR9",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "spell_f1": 0.433003300330033,
+    "macro_f1": 0.7414961705917112,
+    "alive_dead_f1": 0.8810114288687328,
+    "n_gt_spells": 370,
+    "n_pred_spells": 236
+  },
+  {
+    "match": "J03WR9",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "spell_f1": 0.4305647840531561,
+    "macro_f1": 0.7418584668247168,
+    "alive_dead_f1": 0.8810178976090274,
+    "n_gt_spells": 370,
+    "n_pred_spells": 232
+  },
+  {
+    "match": "J03WR9",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "spell_f1": 0.4303630363036303,
+    "macro_f1": 0.742064713700345,
+    "alive_dead_f1": 0.8830001855115481,
+    "n_gt_spells": 370,
+    "n_pred_spells": 236
+  },
+  {
+    "match": "J03WR9",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.65,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "spell_f1": 0.4287145242070117,
+    "macro_f1": 0.7399794957825302,
+    "alive_dead_f1": 0.8809146715066877,
+    "n_gt_spells": 370,
+    "n_pred_spells": 229
+  },
+  {
+    "match": "J03WR9",
+    "method": "peak_duration_v2",
+    "config": {
+      "threshold": 0.75,
+      "smooth_radius": 3,
+      "gate_radius": 8,
+      "min_separation": 30,
+      "team_min": 20,
+      "dead_min": 12
+    },
+    "spell_f1": 0.4234505862646566,
+    "macro_f1": 0.7396920393689467,
+    "alive_dead_f1": 0.8809146715066877,
+    "n_gt_spells": 370,
+    "n_pred_spells": 227
+  }
+]

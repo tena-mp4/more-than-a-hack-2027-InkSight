@@ -22,7 +22,7 @@ sys.path.insert(0, str(ROOT / "evaluation"))
 import possession_metrics as pm  # noqa: E402
 from solutions.dfl_experiments import (  # noqa: E402
     BoundaryModel, EmissionModel, apply_smart_tags, boundary_veto_decode, cache_dfl,
-    codes_to_labels, extract_target_raw, hierarchical_decode, load_raw,
+    codes_to_labels, extract_target_raw, hierarchical_alive_calibrate, hierarchical_decode, load_raw,
     make_context_features, make_features, mask_raw_contiguous, missing_gap_lengths,
     run_ranges, smart_tag_features, sparse_boundary_decode, viterbi_decode,
 )
@@ -97,9 +97,10 @@ def cross_validate(matches):
             config = "bias={:.2f},dead_cost={:.1f}".format(bias, dead_cost)
             _record(rows, test["name"], "03_hierarchical", config,
                     evaluate_codes(test["labels"], prediction, test["run"]))
+        calibrated = hierarchical_alive_calibrate(p_context, runs)
         for threshold, candidate_cost, other_cost in SPARSE_GRID:
             prediction = sparse_boundary_decode(
-                p_context, runs, bprob, threshold, candidate_cost, other_cost)
+                calibrated, runs, bprob, threshold, candidate_cost, other_cost)
             config = "threshold={:.2f},candidate={:.1f},other={:.1f}".format(
                 threshold, candidate_cost, other_cost)
             _record(rows, test["name"], "04_sparse_boundary", config,
@@ -163,8 +164,9 @@ def final_models(matches, target_raw, selected, data_dir):
     outputs["03_hierarchical"] = hierarchical_decode(
         tagged, runs, dead_bias=cfg["bias"], dead_switch_cost=cfg["dead_cost"])
     cfg = parse_config(selected["04_sparse_boundary"])
+    calibrated = hierarchical_alive_calibrate(tagged, runs)
     outputs["04_sparse_boundary"] = sparse_boundary_decode(
-        tagged, runs, bprob, cfg["threshold"], cfg["candidate"], cfg["other"])
+        calibrated, runs, bprob, cfg["threshold"], cfg["candidate"], cfg["other"])
     cfg = parse_config(selected["05_boundary_veto"])
     outputs["05_boundary_veto"] = boundary_veto_decode(
         tagged, runs, bprob, cfg["threshold"], int(cfg["radius"]))

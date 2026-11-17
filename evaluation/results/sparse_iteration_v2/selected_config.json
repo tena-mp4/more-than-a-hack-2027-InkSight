@@ -1,0 +1,22 @@
+{
+  "selected": {
+    "config": {
+      "threshold": 0.55,
+      "smooth_radius": 2,
+      "gate_radius": 6,
+      "min_separation": 20,
+      "team_min": 10,
+      "dead_min": 8
+    },
+    "mean_spell_f1": 0.43210203622002125,
+    "std_spell_f1": 0.03851850615076065
+  },
+  "baseline_mean_spell_f1": 0.4332177576100689,
+  "accepted_as_improvement": false,
+  "deployed_model": "baseline_sparse_v1",
+  "public_ground_truth_used_for_selection": false,
+  "transition_costs_inherited_from_v1": {
+    "candidate": 5.0,
+    "other": 14.0
+  }
+}

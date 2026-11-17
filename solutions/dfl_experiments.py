@@ -659,7 +659,9 @@ def hierarchical_decode(probs: np.ndarray, runs: Sequence[Tuple[int, int]],
         edges = np.diff(np.r_[False, alive, False].astype(np.int8))
         for start, stop in zip(np.flatnonzero(edges == 1), np.flatnonzero(edges == -1)):
             a, b = lo + int(start), lo + int(stop)
-            team_probs = probs[a:b, :2]
+            # Copy: normalising a view here used to mutate the caller's emission matrix and made
+            # later decoders depend silently on execution order.
+            team_probs = probs[a:b, :2].copy()
             team_probs /= np.maximum(team_probs.sum(axis=1, keepdims=True), eps)
             team_logp = np.log(np.clip(team_probs, eps, 1.0))
             team_back = np.zeros((b - a, 2), dtype=np.int8)
@@ -678,6 +680,26 @@ def hierarchical_decode(probs: np.ndarray, runs: Sequence[Tuple[int, int]],
     return merge_micro_runs(out, probs, runs)
 
 
+def hierarchical_alive_calibrate(probs: np.ndarray,
+                                 runs: Sequence[Tuple[int, int]],
+                                 dead_bias: float = 0.0,
+                                 dead_switch_cost: float = 8.0) -> np.ndarray:
+    """Explicitly reproduce the useful alive-state calibration formerly caused by mutation.
+
+    The hierarchical status path identifies temporally coherent live intervals. Within those
+    intervals, H/A emissions are conditioned on the ball being alive while the dead emission is
+    retained as a competing hypothesis for the downstream sparse decoder.
+    """
+    status_path = hierarchical_decode(
+        probs.copy(), runs, dead_bias=dead_bias, dead_switch_cost=dead_switch_cost)
+    out = probs.copy()
+    alive = status_path != D
+    team_total = out[:, :2].sum(axis=1)
+    valid = alive & (team_total > 1e-8)
+    out[valid, :2] /= team_total[valid, None]
+    return out
+
+
 def sparse_boundary_decode(probs: np.ndarray, runs: Sequence[Tuple[int, int]],
                            boundary: np.ndarray, threshold: float = 0.6,
                            candidate_cost: float = 5.0, other_cost: float = 14.0) -> np.ndarray:
@@ -688,6 +710,73 @@ def sparse_boundary_decode(probs: np.ndarray, runs: Sequence[Tuple[int, int]],
     old_discount = CONFIG.boundary_switch_discount
     effective = gate * ((other_cost - candidate_cost) / old_discount)
     return viterbi_decode(probs, runs, boundary=effective, switch_cost=other_cost)
+
+
+def _sparse_boundary_peaks(boundary: np.ndarray, runs: Sequence[Tuple[int, int]],
+                           threshold: float, smooth_radius: int,
+                           gate_radius: int, min_separation: int) -> np.ndarray:
+    """Turn a dense boundary score into isolated, locally adjustable switch windows."""
+    gate = np.zeros(len(boundary), dtype=np.float32)
+    for lo, hi in runs:
+        scores = np.asarray(boundary[lo:hi], dtype=np.float64)
+        if smooth_radius:
+            width = 2 * smooth_radius + 1
+            scores = np.convolve(scores, np.ones(width) / width, mode="same")
+        local_max = np.r_[True, scores[1:] >= scores[:-1]] & np.r_[scores[:-1] > scores[1:], True]
+        candidates = np.flatnonzero(local_max & (scores >= threshold))
+        # Greedy temporal non-maximum suppression retains the strongest point on a plateau and
+        # prevents a burst of correlated boundary scores from licensing several possessions.
+        selected = []
+        for offset in candidates[np.argsort(scores[candidates])[::-1]]:
+            if all(abs(int(offset) - previous) >= min_separation for previous in selected):
+                selected.append(int(offset))
+        for offset in selected:
+            centre = lo + offset
+            gate[max(lo, centre - gate_radius):min(hi, centre + gate_radius + 1)] = 1.0
+    return gate
+
+
+def merge_short_runs(labels: np.ndarray, probs: np.ndarray,
+                     runs: Sequence[Tuple[int, int]], team_min: int,
+                     dead_min: int) -> np.ndarray:
+    """Approximate a semi-Markov duration constraint by merging weak short runs."""
+    out = labels.copy()
+    for lo, hi in runs:
+        changed = True
+        while changed:
+            changed = False
+            segments = _segments(out, lo, hi)
+            for index, (start, stop, state) in enumerate(segments):
+                minimum = dead_min if state == D else team_min
+                if minimum <= 0 or stop - start >= minimum or len(segments) == 1:
+                    continue
+                neighbours = []
+                if index:
+                    neighbours.append(segments[index - 1][2])
+                if index + 1 < len(segments):
+                    neighbours.append(segments[index + 1][2])
+                replacement = max(
+                    set(neighbours),
+                    key=lambda candidate: float(np.log(probs[start:stop, candidate]).sum()),
+                )
+                out[start:stop] = replacement
+                changed = True
+                break
+    return merge_micro_runs(out, probs, runs)
+
+
+def sparse_peak_boundary_decode(
+        probs: np.ndarray, runs: Sequence[Tuple[int, int]], boundary: np.ndarray,
+        threshold: float = 0.7, candidate_cost: float = 5.0,
+        other_cost: float = 14.0, smooth_radius: int = 2,
+        gate_radius: int = 4, min_separation: int = 12,
+        team_min: int = 10, dead_min: int = 8) -> np.ndarray:
+    """Sparse-boundary Viterbi with peak suppression and explicit duration regularisation."""
+    gate = _sparse_boundary_peaks(
+        boundary, runs, threshold, smooth_radius, gate_radius, min_separation)
+    effective = gate * ((other_cost - candidate_cost) / CONFIG.boundary_switch_discount)
+    decoded = viterbi_decode(probs, runs, boundary=effective, switch_cost=other_cost)
+    return merge_short_runs(decoded, probs, runs, team_min, dead_min)
 
 
 def boundary_veto_decode(probs: np.ndarray, runs: Sequence[Tuple[int, int]],

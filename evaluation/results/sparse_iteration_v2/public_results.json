@@ -1,0 +1,18 @@
+[
+  {
+    "approach": "baseline_sparse_v1",
+    "spell_f1": 0.51,
+    "macro_f1": 0.7427615805512767,
+    "alive_dead_f1": 0.9302833944882504,
+    "n_gt_spells": 17,
+    "n_pred_spells": 23
+  },
+  {
+    "approach": "peak_duration_v2",
+    "spell_f1": 0.4,
+    "macro_f1": 0.7273735560867546,
+    "alive_dead_f1": 0.9302833944882504,
+    "n_gt_spells": 17,
+    "n_pred_spells": 27
+  }
+]
